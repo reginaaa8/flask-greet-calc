@@ -19,3 +19,11 @@ def run_subtract():
     b = int(request.args.get('b'))
     diff = sub(a,b)
     return f"{diff}"
+
+@app.route('/multiply')
+def run_multiply():
+    '''multiply a and b parameters'''
+    a = int(request.args.get('a'))
+    b = int(request.args.get('b'))
+    product = mult(a,b)
+    return f"{product}"
