@@ -13,7 +13,7 @@ def welcome_home():
     return 'welcome home'
 
 @app.route('/welcome/back')
-def welcome():
+def welcome_back():
     '''returns string: "welcome back"'''
     return 'welcome back'
 
