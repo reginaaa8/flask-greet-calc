@@ -27,3 +27,11 @@ def run_multiply():
     b = int(request.args.get('b'))
     product = mult(a,b)
     return f"{product}"
+
+@app.route('/divide')
+def run_divide():
+    '''divide a by b parameter'''
+    a = int(request.args.get('a'))
+    b = int(request.args.get('b'))
+    result = div(a,b)
+    return f"{result}"
