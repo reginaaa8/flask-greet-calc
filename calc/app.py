@@ -11,3 +11,11 @@ def run_add():
     b = int(request.args.get('b'))
     sum = add(a,b)
     return f"{sum}"
+
+@app.route('/subtract')
+def run_subtract():
+    '''subtract a and b parameters'''
+    a = int(request.args.get('a'))
+    b = int(request.args.get('b'))
+    diff = sub(a,b)
+    return f"{diff}"
